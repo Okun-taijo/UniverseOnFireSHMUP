@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public FirstBulletType firstBullet;
-    private Vector2 direction;
+    [SerializeField] private FirstBulletType _firstBullet;
+    [SerializeField] private Transform _bulletStartPoint;
  
     // Start is called before the first frame update
     void Start()
@@ -16,15 +16,14 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction = (transform.localRotation * Vector2.right).normalized;
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
     }
 
     public void Shoot()
     {
-        GameObject gameObject = Instantiate(firstBullet.gameObject, transform.position, Quaternion.identity);
-        FirstBulletType bulletDirection = gameObject.GetComponent<FirstBulletType>();
-        bulletDirection.Direction = direction;
-        firstBullet.transform.rotation = bulletDirection.transform.rotation;
-      
+        var bullet = Instantiate(_firstBullet, _bulletStartPoint.position, _bulletStartPoint.rotation);
     }
 }

@@ -22,15 +22,6 @@ public class PlayerShip : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         _moveVelocity = moveInput.normalized * _moveSpeed;
-
-        _shooting = Input.GetMouseButtonDown(0);
-        if(_shooting)
-        {
-            foreach(Gun gun in gunsArray)
-            {
-                gun.Shoot();
-            }
-        }
     }
 
     void FixedUpdate()

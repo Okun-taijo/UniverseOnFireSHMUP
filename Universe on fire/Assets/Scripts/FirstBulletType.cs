@@ -5,29 +5,22 @@ using UnityEngine;
 public class FirstBulletType : MonoBehaviour
 {
     [SerializeField] private float _bulletSpeed = 20f;
-    public Vector2 Direction = new Vector2(1,0);
-    private Vector2 _velocity;
-    public SpriteRenderer BulletSprite;
+    [SerializeField] private float _lifeTime = 1f;
+   
  
     
     // Start is called before the first frame update
     void Start()
     {
-        BulletSprite = GetComponent<SpriteRenderer>();
-        Destroy(gameObject, 1);
+        Destroy(gameObject, _lifeTime);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        _velocity = Direction * _bulletSpeed;
+        transform.position += transform.right * _bulletSpeed * Time.fixedDeltaTime;
    
     }
-    private void FixedUpdate()
-    {
-        Vector2 position = transform.position;
-        position += _velocity * Time.fixedDeltaTime;
-        transform.position = position;
-    }
+   
  
 }
