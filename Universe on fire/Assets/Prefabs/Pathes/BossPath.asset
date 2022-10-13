@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a02a6056758ad4bb309eda868c42f8, type: 3}
+  m_Name: BossPath
+  m_EditorClassIdentifier: 
+  Points:
+  - {x: -34.001915, y: 1.0492607}
+  - {x: -32.881905, y: 2.9792607}
+  - {x: -32.98191, y: -1.0007393}
+  - {x: -33.991905, y: 4.059261}
+  - {x: -34.021904, y: -1.9807394}
+  - {x: -31.98191, y: 0.9992608}
+  - {x: -31.021904, y: 4.999261}
+  - {x: -30.971916, y: -2.9707391}
+  - {x: -30.941902, y: 0.9992608}
+  - {x: -37.001915, y: 0.9992608}
+  - {x: -35.961906, y: 5.019261}
+  - {x: -35.98191, y: -2.9507396}
+  - {x: -30.001915, y: 1.0292608}
+  - {x: -38.961906, y: 0.9992608}
