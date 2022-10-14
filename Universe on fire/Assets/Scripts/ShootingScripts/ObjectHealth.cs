@@ -7,8 +7,8 @@ namespace StillTrying
 {
     public class ObjectHealth : MonoBehaviour, IDamageble
     {
-        [SerializeField] private int _maxHealth;
-        private int _currentHealth;
+        [SerializeField] public int _maxHealth;
+        public int _currentHealth;
         [SerializeField] protected UnityEvent onEndedHealth;
       protected  virtual void Start ()
       {
@@ -32,6 +32,18 @@ namespace StillTrying
             {
                 onEndedHealth.Invoke();
                
+            }
+        }
+
+        public void AddHealth(int value)
+        {
+            if (value > 0)
+            {
+                _currentHealth += value;
+            }
+            if (_currentHealth > _maxHealth)
+            {
+                _currentHealth = _maxHealth;
             }
         }
     }

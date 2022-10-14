@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace StillTrying
 {
-    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(Collider2D))]
     public class BulletCollision : MonoBehaviour
     {
         [SerializeField] private int _damage;

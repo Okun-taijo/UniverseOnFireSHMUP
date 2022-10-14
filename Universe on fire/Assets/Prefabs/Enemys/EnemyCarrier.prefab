@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f342590c08510b4899d10e18f16e97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 500
+  _maxHealth: 1200
   onEndedHealth:
     m_PersistentCalls:
       m_Calls:
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8320d241c75bc346bbb6123a38a47bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _score: 200
+  _score: 400
 --- !u!1 &7993564371522282269
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,4 +358,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnedFirstEnemyType: {fileID: 6552326812594286725, guid: a33e33a2a33df3c41ae6ceb8603fb556, type: 3}
   _spawnedSecondEnemyType: {fileID: 6239417133384236299, guid: 1ea2045fe9b31a945b2fa7b55a2f8611, type: 3}
-  _spawnRate: 1
+  _spawnRate: 0.6

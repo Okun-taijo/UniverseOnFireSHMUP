@@ -18,12 +18,9 @@ namespace StillTrying
         public override void TakeDamage(int damage)
         {
             base.TakeDamage(damage);
-            
+           
 
         }
-        public void PrintHealth()
-        {
-            Debug.Log(GetCurrentHealth());    
-        }
+      
     }
 }

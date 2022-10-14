@@ -24,7 +24,9 @@ public class FirstBulletType : MonoBehaviour
         {
              Destroy(gameObject); 
         }
+        
     }
-   
- 
+
+
+
 }
