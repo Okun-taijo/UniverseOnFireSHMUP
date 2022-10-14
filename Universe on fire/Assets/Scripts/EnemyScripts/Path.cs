@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 namespace StillTrying
@@ -20,7 +19,7 @@ namespace StillTrying
             {
                 Points = enemyPath.GetPathPosition();
                 EditorUtility.SetDirty(this);
-                EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+               
             }
         }
         [ContextMenu("Load path")]
